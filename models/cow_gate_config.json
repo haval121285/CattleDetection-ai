@@ -1,0 +1,13 @@
+{
+  "detector": "yolo11s.pt",
+  "cow_class_id": 19,
+  "cow_confidence": 0.45,
+  "min_cow_area_ratio": 0.08,
+  "max_cows_allowed": 1,
+  "crop_padding": 0.06,
+  "image_size": 224,
+  "similarity_threshold": 0.4496795266866684,
+  "safe_min_weight": 30.0,
+  "safe_max_weight": 741.0,
+  "pipeline": "YOLO cow detection -> cow crop -> embedding OOD check -> weight regression"
+}

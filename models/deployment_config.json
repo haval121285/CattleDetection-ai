@@ -1,0 +1,10 @@
+{
+  "regression_model_file": "cattleweight_efficientnetv2_best.keras",
+  "detector_model_file": "yolo11s.pt",
+  "image_size": 224,
+  "weight_mean": 164.09555984555985,
+  "weight_std": 43.67086305172013,
+  "input_range": "0..255 float32; input scaling is inside the model",
+  "required_pipeline": "YOLO cow detection -> crop -> secondary OOD gate -> regression",
+  "never_predict_weight_without_cow_detection": true
+}
